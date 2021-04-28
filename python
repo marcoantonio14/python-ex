@@ -1,0 +1,15 @@
+# Threading example
+import time
+
+def allocate_lock():
+    while True:
+        print('''lock.acquire()
+        time.sleep(sleeptime)
+        lock.release()
+        time.sleep(sleeptime)
+        ''')
+
+if __name__ == "__main__":
+    #lock = thread.allocate_lock()
+    print(allocate_lock())
+    print('lock')
